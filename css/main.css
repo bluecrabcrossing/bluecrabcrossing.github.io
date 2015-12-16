@@ -335,6 +335,7 @@ background: rgba(0,0,0,.7);
 **************************/
 #about-us {
   background-image: url(../images/slider/1.jpg);
+    background-position: top;
   padding: 60px 0;
 }
 
