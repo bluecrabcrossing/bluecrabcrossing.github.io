@@ -18,7 +18,7 @@
             width:'100%', // Default width 
             height:'100%', // Default Height
             zIndex: '999',  // Default zIndex 
-            bgColor: '#2ecc71', // Default background color
+            bgColor: '#fff', // Default background color
             spinner:'spinner7', // Default Spinner
             imagePath:'' // Default Path custom image
         }, options);
