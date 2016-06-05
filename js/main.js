@@ -1,10 +1,10 @@
 jQuery(function($) {
 
 	//Preloader
-	var preloader = $('.preloader');
-	$(window).load(function(){
-		preloader.remove();
-	});
+	//var preloader = $('.preloader');
+	//$(window).load(function(){
+	//	preloader.remove();
+	//});
 
 	//#main-slider
 	var slideHeight = $(window).height();

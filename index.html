@@ -21,6 +21,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fakeLoader.css">
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -29,11 +30,12 @@
   
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAGBkZAA4ODgCCUAAA/wAvABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAABAAARAREREBEAEAEQ0RENEAERARENENEQEQEREQ0Q0REQAAEQ0RENEAAAAREREREQAAERABERABEQAREQCACBERABEAAIAEABEAARAIAAFBEAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AADf+wAAyBMAAGAGAAAgBAAAgAEAAOAHAADgBwAAjDEAAIWhAACduQAAy9MAAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    
 </head><!--/head-->
 
 <body>
-
-  <!--.preloader-->
+<div id="fakeLoader"></div>
+  <!--.preloader
   <div class="preloader"><div id="loader-wrapper">
     <div id="loader"></div>
  
@@ -746,6 +748,17 @@ Say something with Crisfield on it!</p>
   <script type="text/javascript" src="js/jquery.countTo.js"></script>
   <script type="text/javascript" src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/fakeLoader.js"></script>
+<script type="text/javascript">
+$("#fakeLoader").fakeLoader({
+timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+zIndex:"999",//Default zIndex
+spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+bgColor:"#fff", //Hex, RGB or RGBA colors
+});
+</script>
 
 </body>
 </html>
